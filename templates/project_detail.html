@@ -1,9 +1,0 @@
-{% extends "base.html" %}
-{% block content %}
-  <h1>{{ project.title }}</h1>
-  <p>{{ project.body }}</p>
-  <a href="/update/{{ project.id }}" class="btn-update hover active">update</a>
-  <form action="/delete/{{ project.id }}" method="POST" style="display:inline;">
-    <input type="submit" value="delete" class="btn-gradient small">
-  </form>
-{% endblock %}
